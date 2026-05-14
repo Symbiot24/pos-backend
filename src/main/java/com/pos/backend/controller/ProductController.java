@@ -11,7 +11,6 @@ import org.springframework.web.multipart.MultipartFile;
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -28,8 +27,6 @@ public class ProductController {
 
     @Autowired
     private Cloudinary cloudinary;
-
-    private static final String UPLOAD_DIR = System.getProperty("user.dir") + "/uploads/";
 
     // ✅ CREATE PRODUCT WITH OWNER
     @PostMapping("/upload")
